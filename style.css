@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #3183ee;
+  background: linear-gradient(top, #3183ee bottom, #0343f4 65%);
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-family: "Crimson Pro", serif;
+}
+
+.menu {
+  width: 20%;
+  height: 100%;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.menu .logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.menu .menu-items {
+  flex-grow: 2;
+}
+.menu .company-offers {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.main-content {
+  margin: 1.5rem;
+  padding: 0.5rem;
+  background-color: whitesmoke;
+  width: 80%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 38% 2% 18% 2% 18% 2%;
+  grid-template-rows: 18% 2% 38% 2% 38% 2%;
+  grid-template-areas: "balance none action none logout none" "balance none action none wallet none" "transaction none transaction none help none";
+}
+.main-content > * {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 10px;
+}
+.main-content .balance {
+  grid-area: balance;
+}
+.main-content .quick-actions {
+  grid-area: action;
+}
+.main-content .transactions {
+  grid-area: transaction;
+}
+.main-content .logut {
+  grid-area: logout;
+}
+.main-content .credit-cards {
+  grid-area: wallet;
+}
+.main-content .quick-help {
+  grid-area: help;
+}
+
+/*# sourceMappingURL=style.css.map */
