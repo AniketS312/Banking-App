@@ -1,0 +1,29 @@
+.balance {
+  padding: 5%;
+  h6 {
+    font-size: 01rem;
+    color: grey;
+  }
+
+  h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    span {
+      font-weight: 500;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .active {
+    background-color: lightblue;
+    color: black;
+    border-radius: 50px;
+  }
+}

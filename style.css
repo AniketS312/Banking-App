@@ -22,16 +22,22 @@ body {
   flex-direction: row;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Crimson Pro", serif;
 }
 
 .menu {
-  width: 20%;
+  width: 15%;
   height: 100%;
   padding-left: 2rem;
   display: flex;
@@ -51,21 +57,51 @@ p {
   align-self: center;
 }
 
+.balance {
+  padding: 5%;
+}
+.balance h6 {
+  font-size: 1rem;
+  color: grey;
+}
+.balance h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.balance h2 span {
+  font-weight: 500;
+}
+.balance a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+.balance .active {
+  background-color: lightblue;
+  color: black;
+  border-radius: 50px;
+}
+
 .main-content {
   margin: 1.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: whitesmoke;
-  width: 80%;
-  border-radius: 20px;
+  width: 85%;
+  border-radius: 10px;
   display: grid;
-  grid-template-columns: 38% 2% 18% 2% 18% 2%;
-  grid-template-rows: 18% 2% 38% 2% 38% 2%;
-  grid-template-areas: "balance none action none logout none" "balance none action none wallet none" "transaction none transaction none help none";
+  grid-template-columns: 40% 18%;
+  grid-template-rows: 18% 38%;
+  grid-template-areas: "balance action logout" "balance action wallet " "transaction transaction  help";
+  column-gap: 2%;
+  row-gap: 2%;
 }
 .main-content > * {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .main-content .balance {
   grid-area: balance;
@@ -76,7 +112,7 @@ p {
 .main-content .transactions {
   grid-area: transaction;
 }
-.main-content .logut {
+.main-content .logout {
   grid-area: logout;
 }
 .main-content .credit-cards {
