@@ -36,6 +36,13 @@ h6 {
 }
 
 p,
-a {
+a,
+span {
   font-family: "Crimson Pro", serif;
+}
+
+.active {
+  background-color: lightblue;
+  color: black;
+  border-radius: 50px;
 }

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Versitile Credit Union</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,13 +35,23 @@
           <a href="#" class="income active">Income</a>
           <a href="#" class="spent">Spent</a>
         </div>
-        <canvas id="myChart" width="400" height="400"></canvas>
       </section>
       <section class="quick-actions">
-        <h3>quick actions</h3>
+        <div class="circle">
+          <span class="material-icons"> swap_horiz </span>
+          <span class="action-text">Transfer</span>
+        </div>
+        <div class="circle">
+          <span class="material-icons"> autorenew </span>
+          <span class="action-text">Pay a Bill</span>
+        </div>
+        <div class="circle">
+          <span class="material-icons"> format_list_numbered </span>
+          <span class="action-text">Transactions</span>
+        </div>
       </section>
       <section class="transactions">
-        <h3>transactions</h3>
+        <h3 class="action-text">transactions</h3>
       </section>
       <section class="logout">
         <img src="" alt="" />
@@ -49,5 +63,6 @@
         <h3>quick helps</h3>
       </section>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>
