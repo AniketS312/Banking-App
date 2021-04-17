@@ -31,7 +31,7 @@
       transition: .3s all;
 
       &:hover {
-        background: rgb(118,53,104, .4);
+        background: rgb(90, 150, 230, .9);
         cursor: pointer;
       }
     }
@@ -41,6 +41,8 @@
       color: white;
       font-size: 1.2rem;
       margin-bottom: 5rem;
+      width: 100%;
+      white-space: nowrap;
     }
   }
   .company-offers {
@@ -51,6 +53,6 @@
   }
 
   .active-link {
-    background: rgb(118,53,104, .4);
+    background: rgb(90, 150, 230, .9);
   }
 }

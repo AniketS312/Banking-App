@@ -74,7 +74,7 @@ span {
   transition: 0.3s all;
 }
 .menu .menu-items li:hover {
-  background: rgba(118, 53, 104, 0.4);
+  background: rgba(90, 150, 230, 0.9);
   cursor: pointer;
 }
 .menu .menu-items a {
@@ -82,6 +82,8 @@ span {
   color: white;
   font-size: 1.2rem;
   margin-bottom: 5rem;
+  width: 100%;
+  white-space: nowrap;
 }
 .menu .company-offers {
   flex-grow: 1;
@@ -90,7 +92,7 @@ span {
   border-radius: 5px;
 }
 .menu .active-link {
-  background: rgba(118, 53, 104, 0.4);
+  background: rgba(90, 150, 230, 0.9);
 }
 
 .balance {
@@ -176,6 +178,33 @@ span {
   display: flex;
   flex-direction: column;
   padding-right: 3rem;
+}
+
+.transactions {
+  padding: 0.7rem 0.5rem;
+}
+.transactions .scrolling {
+  height: 100%;
+  overflow-y: auto;
+}
+.transactions .scrolling .single-transaction {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+}
+.transactions .scrolling .single-transaction::before {
+  content: "";
+}
+.transactions .scrolling .single-transaction::after {
+  content: "";
+}
+
+.accounts {
+  padding: 0.7rem 0.5rem;
 }
 
 .main-content {
