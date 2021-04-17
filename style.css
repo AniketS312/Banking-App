@@ -44,24 +44,53 @@ span {
 }
 
 .menu {
+  margin-left: 1rem;
+  padding: 2rem 0;
   width: 15%;
   height: 100%;
-  padding-left: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .menu .logo {
   flex-grow: 1;
   display: flex;
+  justify-content: center;
   align-items: center;
-  align-self: center;
 }
 .menu .menu-items {
   flex-grow: 2;
+  padding: 0;
+  display: flex;
+}
+.menu .menu-items ul {
+  list-style-type: none;
+}
+.menu .menu-items li {
+  padding: 0.6rem 2rem;
+  border-radius: 5px;
+  margin: 0.6rem auto;
+  transition: 0.3s all;
+}
+.menu .menu-items li:hover {
+  background: rgba(118, 53, 104, 0.4);
+  cursor: pointer;
+}
+.menu .menu-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
 }
 .menu .company-offers {
   flex-grow: 1;
-  align-self: center;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+}
+.menu .active-link {
+  background: rgba(118, 53, 104, 0.4);
 }
 
 .balance {
@@ -92,7 +121,7 @@ span {
   width: 100%;
   height: 100%;
   padding: 3rem 0;
-  background-color: #e0e0e0;
+  background: whitesmoke;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -127,6 +156,26 @@ span {
 .action-text {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.logout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logout img:first-of-type {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.logout img:last-of-type {
+  width: 40px;
+  height: 50px;
+}
+.logout .text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3rem;
 }
 
 .main-content {
